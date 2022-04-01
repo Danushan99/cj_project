@@ -1,14 +1,9 @@
 import 'package:cj/main.dart';
 import 'package:flutter/material.dart';
 
-class Add_project extends StatefulWidget {
-  const Add_project({Key? key}) : super(key: key);
+class EditSprint extends StatelessWidget {
+  const EditSprint({Key? key}) : super(key: key);
 
-  @override
-  State<Add_project> createState() => _Add_projectState();
-}
-
-class _Add_projectState extends State<Add_project> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,19 +19,27 @@ class _Add_projectState extends State<Add_project> {
             ),
           ),
         ),
-        centerTitle: true,
       ),
       body: new Container(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(27.0),
           color: Colors.white,
           child: new Container(
             child: new Center(
                 child: new Column(children: [
-              Text("Add Project ", style: TextStyle(fontSize: 20)),
+              Text("Edit Sprint Details", style: TextStyle(fontSize: 20)),
               new Padding(padding: EdgeInsets.only(top: 50.0)),
+              Align(
+                  alignment: Alignment.topLeft,
+                  child: Text(
+                    "Sprint Name",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  )),
+              SizedBox(
+                height: 10,
+              ),
               new TextFormField(
                 decoration: new InputDecoration(
-                  labelText: "Enter Project Name",
+                  labelText: "Edit Sprint Name",
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
                     borderRadius: new BorderRadius.circular(5.0),
@@ -52,9 +55,18 @@ class _Add_projectState extends State<Add_project> {
               SizedBox(
                 height: 30,
               ),
+              Align(
+                  alignment: Alignment.topLeft,
+                  child: Text(
+                    "Sprint description",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  )),
+              SizedBox(
+                height: 15,
+              ),
               new TextFormField(
                 decoration: new InputDecoration(
-                  labelText: "Enter Project description",
+                  labelText: "Edit Sprint description",
                   fillColor: Colors.white,
                   border: new OutlineInputBorder(
                     borderRadius: new BorderRadius.circular(5.0),

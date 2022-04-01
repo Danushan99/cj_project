@@ -74,7 +74,7 @@ class _Add_taskState extends State<Add_task> {
                     child: RaisedButton(
                       onPressed: () {},
                       child: const Text('Save', style: TextStyle(fontSize: 20)),
-                      color: Colors.blue,
+                      color: Colors.teal,
                       textColor: Colors.white,
                       elevation: 5,
                     ),
@@ -86,7 +86,7 @@ class _Add_taskState extends State<Add_task> {
                       onPressed: () {},
                       child:
                           const Text('Cancel', style: TextStyle(fontSize: 20)),
-                      color: Colors.blue,
+                      color: Colors.red,
                       textColor: Colors.white,
                       elevation: 5,
                     ),

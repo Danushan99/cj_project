@@ -1,5 +1,5 @@
 // ignore: file_names
-// ignore_for_file: file_names
+// ignore_for_file: file_names, duplicate_ignore
 
 import 'package:cj/addSprint.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
           onPressed: () => Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => MyHomePage(
+              builder: (context) => const MyHomePage(
                 title: 'Projects',
               ),
             ),
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
+              child: SizedBox(
                 height: 200,
                 width: 400,
                 child: InkWell(
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => TaskPage(),
+                        builder: (context) => const TaskPage(),
                       ),
                     );
                   },
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => Add_sprint(),
+              builder: (context) => const Add_sprint(),
             ),
           );
         },
@@ -109,7 +109,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [],
+                children: const [],
               ),
             ],
           ),
