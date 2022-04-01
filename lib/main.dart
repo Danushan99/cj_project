@@ -46,6 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         children: [
+          Container(
+              height: 150,
+              width: 300,
+              child: Image.asset('assert/project.png')),
           Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
